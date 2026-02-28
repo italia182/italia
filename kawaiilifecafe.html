@@ -1,1 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kawaii Life Cafe | Italia</title>
 
+<style>
+body{
+  margin:0;
+  font-family: system-ui, sans-serif;
+}
+
+/* TOP HEART NAV */
+.topbar{
+  background:#d9cfb4;
+  border:3px solid black;
+  border-bottom:0;
+  padding:30px 0;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+}
+
+/* Each heart container */
+.nav-item{
+  width:180px;
+  text-align:center;
+}
+
+.nav-item img{
+  width:100%;
+  height:auto;
+  cursor:pointer;
+  transition: transform .2s ease;
+}
+
+.nav-item img:hover{
+  transform:scale(1.05);
+}
+
+/* MAIN SECTION */
+.cafe-section{
+  background:#ffd6e5;
+  border:3px solid black;
+  min-height:75vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:40px 20px;
+}
+
+/* Heart Menu Image */
+.heart-menu{
+  max-width:600px;
+  width:90%;
+  height:auto;
+  box-shadow:0 20px 40px rgba(0,0,0,0.25);
+  transition: transform .25s ease;
+}
+
+.heart-menu:hover{
+  transform:scale(1.02);
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP NAV -->
+<div class="topbar">
+
+  <div class="nav-item">
+    <a href="index.html">
+      <img src="home.png" alt="Home">
+    </a>
+  </div>
+
+  <div class="nav-item">
+    <a href="music.html">
+      <img src="music.png" alt="Music">
+    </a>
+  </div>
+
+  <div class="nav-item">
+    <a href="schedule.html">
+      <img src="schedule.png" alt="Schedule">
+    </a>
+  </div>
+
+</div>
+
+<!-- CENTER IMAGE -->
+<div class="cafe-section">
+  <img src="heartmenu.png" alt="Kawaii Life Cafe Menu" class="heart-menu">
+</div>
+
+</body>
+</html>
