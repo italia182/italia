@@ -1,13 +1,110 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-  <title>Schedule | Italia</title>
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Schedule | Italia</title>
+
+<style>
+body{
+  margin:0;
+  font-family: system-ui, sans-serif;
+}
+
+/* TOP NAV BAR */
+.topbar{
+  background:#d9cfb4;
+  border:3px solid black;
+  border-bottom:0;
+  padding:30px 0;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+}
+
+/* Each button container */
+.nav-item{
+  width:180px;
+  text-align:center;
+}
+
+.nav-item img{
+  width:100%;
+  height:auto;
+  cursor:pointer;
+  transition: transform .2s ease;
+}
+
+.nav-item img:hover{
+  transform:scale(1.05);
+}
+
+/* PINK SCHEDULE SECTION */
+.schedule-section{
+  background:#d882a5;
+  border:3px solid black;
+  min-height:70vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+
+/* Schedule Text */
+.schedule-content{
+  color:black;
+  font-weight:900;
+  letter-spacing:.05em;
+}
+
+.schedule-content h1{
+  font-size:48px;
+  margin-bottom:20px;
+}
+
+.schedule-content p{
+  font-size:32px;
+  margin:12px 0;
+}
+</style>
 </head>
+
 <body>
-  <main class="wrap page">
-    <a class="back" href="index.html">← Home</a>
-    <h1>Hello world</h1>
-  </main>
+
+<!-- TOP HEART NAV -->
+<div class="topbar">
+
+  <div class="nav-item">
+    <a href="index.html">
+      <img src="home.png" alt="Home">
+    </a>
+  </div>
+
+  <div class="nav-item">
+    <a href="music.html">
+      <img src="music.png" alt="Music">
+    </a>
+  </div>
+
+  <div class="nav-item">
+    <a href="schedule.html">
+      <img src="schedule.png" alt="Schedule">
+    </a>
+  </div>
+
+</div>
+
+<!-- PINK SECTION -->
+<div class="schedule-section">
+  <div class="schedule-content">
+    <h1>SCHEDULE</h1>
+    <p>FEBRUARY 28</p>
+    <p>MARCH 28</p>
+    <p>JUNE 13</p>
+    <p>AUGUST</p>
+    <p>OCTOBER</p>
+  </div>
+</div>
+
 </body>
 </html>
